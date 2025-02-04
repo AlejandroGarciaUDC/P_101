@@ -6,7 +6,12 @@
 }
 
 body {
-    background-color: #e67716;
+    /*background-color: #e67716;*/
+    background-image: url('MULTIMEDIA/desktop-wallpaper-cloud.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat:repeat-y; /* Evita que se repita */
+
     text-align: left;
     /*padding: 20px;*/
 }
@@ -24,16 +29,21 @@ h1{
 }
 
 footer {
-    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
     padding: 10px;
     text-align: center;
     background-color: #333;
     color: white;
 }
 
-div {
+/*.calculator-container{
     text-align: center;
-}
+    width: 95%;
+}*/
 
 /*
 section {
