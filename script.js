@@ -1,3 +1,15 @@
+async function loadCalculator() {
+    try {
+      const response = await fetch('calculator/calculator.html');
+      const html = await response.text();
+      const calculatorContainer = document.getElementById('calculator-container');
+      calculatorContainer.innerHTML = html;
+    } catch (error) {
+      console.error('Error loading calculator:', error);
+    }
+}
+loadCalculator();
+
 // Cargar datos almacenados al inicio
 document.addEventListener("DOMContentLoaded", () => {
     cargarLista("tareas", "lista-tareas");
@@ -67,3 +79,4 @@ function cargarLista(storageKey, listaId) {
     });
 }
 
+// ------------------------------------------------------------
